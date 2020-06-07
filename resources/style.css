@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #5B6470;
+}
+
+p.name, li.nav-links, a, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 20px;
+    height: 70px;
+    background-color: #24252a;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.name {
+    margin-right: auto;
+}
+
+.nav-links {
+   list-style: none; 
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #457b9d;
+}
+
+button {
+    padding: 10px 25px;
+    margin-left: 10px;
+    background-color: rgba(69, 123, 157, 1);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(69, 123, 157, 0.8);
+}
+
+.main {
+    background-color: #F4F6F7;
+    height: 655px;
+}
+
+.image-container {
+    background-image: url("./person-sitting-near-table-with-teacups-and-plates-2074130.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+}
+
+.card-container-flex {
+    display: flex;
+    background-color: #faf9f9;
+    position: relative;
+    top: -360px;
+    height: 385px;
+    width: 930px;
+    margin: auto;
+    padding: 25px 25px 0px 25px;
+    opacity: .98;
+    flex-wrap: wrap;
+}
+.main .card-container-flex .profile-image {
+    width: 40%;
+    height: 375px;
+    align-items: center;
+}
+
+#profile-pic {
+    height: 350px;
+    padding-bottom: 15px;;
+}
+
+#hello {
+    background-color: rgba(69, 123, 157, 1);
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 28px;
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 5px;
+    font-weight: 400;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right:5px solid transparent;
+    border-top: 10px solid rgba(69, 123, 157, 1);
+    margin-left: 36px;
+    margin-bottom: 6px;
+}
+
+.profile-title {
+    width: 475px;
+}
+
+#profile-name {
+    font-weight: 300;
+    font-size: 30px;
+    margin-left: 28px;
+}
+
+#profile-title {
+    font-weight: 400;
+    padding: 8px 5px 25px 0px;
+    margin-left: 28px;
+    border-bottom: 1px solid #2d3142;
+}
+
+.profile-details-list {
+    display: flex;
+}
+
+#list-1 ul {
+    padding-top: 25px;
+    margin-left: 28px;
+}
+
+#list-1 ul li {
+    padding-bottom: 25px;
+    list-style: none;
+}
+
+#list-1 ul li:nth-child(2) {
+    padding-bottom: 44px;
+}
+
+#list-2 ul {
+    padding-top: 25px;
+    margin-left: 30px;
+}
+
+#list-2 ul li {
+    padding-bottom: 25px;
+    list-style: none;
+    color: #5B6470;
+    font-weight: 400;
+}
+
+.main .card-footer {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 930px;
+    margin: auto;
+    background-color: #1d3557;
+    overflow: visible;
+    position: relative;
+    top: -360px;
+    justify-content: space-between;
+    padding: 0 300px;
+}
+
+.fa-envelope:hover {
+    opacity: .8;
+}
+
+.fa-linkedin-in:hover {
+    opacity: .8;
+}
+
+.fa-github:hover {
+    opacity: .8;
+}
+
+.resume-button {
+    position: relative;
+    top: -330px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;  
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+}
+
+.resume-button span, 
+.resume-button .download-icon {
+    position: absolute;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+.resume-button span {
+    left: 0px;
+    width: 75%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #571D35;
+}
+
+.resume-button .download-icon {
+    right: 0;
+    width: 25%;
+    background-color: #571D35;
+}
+
+.resume-button .download-icon .fa-arrow-down {
+    vertical-align: middle;
+}
+
+.resume-button:hover span {
+    left: -75%;
+}
+
+.resume-button:hover .download-icon {
+    width: 100%;
+}
+
+.resume-button:hover .download-icon .fa-arrow-down {
+    font-size: 45px;
+}
+
+.resume-button span,
+.resume-button .download-icon,
+.resume-button i {
+    transition: all 0.5s ease-out;
+}
+
+.section {
+    background: #F4F6F7;
+    text-align: center;
+    padding: 20px 80px 0px 80px;
+}
+
+.section h2 {
+    padding: 30px 0;
+}
+
+#portfolio .projects {
+    display: flex;
+    justify-content: space-around;
+    /* some sort of border, shadow, padding, dimensions */
+}
+
+#portfolio .projects .project {
+    margin: 0 10px 10px 10px;
+}
+
+#portfolio .projects .project img {
+    height: 200px;
+    width: 300px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3)
+}
+
+#portfolio .projects .project p {
+   padding-top: 5px;
+   font-weight: 400;
+}
+
+
+
+
+
