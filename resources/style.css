@@ -52,7 +52,7 @@ header {
     color: #457b9d;
 }
 
-button {
+.button {
     padding: 10px 25px;
     margin-left: 10px;
     background-color: rgba(69, 123, 157, 1);
@@ -62,7 +62,7 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.button:hover {
     background-color: rgba(69, 123, 157, 0.8);
 }
 
